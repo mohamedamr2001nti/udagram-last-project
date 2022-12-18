@@ -15,4 +15,4 @@ services:
   frontend:
     build:
       context: udagram-frontend
-    image: mohamedamr2001xcc/udacity-frontend
+    image: mohamedamr2001xcc/udagram-frontend
