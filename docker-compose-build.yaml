@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  reverseproxy:
+    build:
+      context: udagram-reverseproxy
+    image: mohamedamr2001xcc/udagram-reverseproxy
+  backend_user:
+    build:
+      context: udagram-api-user
+    image: mohamedamr2001xcc/udagram-api-user
+  backend_feed:
+    build:
+      context: udagram-api-feed
+    image: mohamedamr2001xcc/udagram-api-feed
+  frontend:
+    build:
+      context: udagram-frontend
+    image: mohamedamr2001xcc/udacity-frontend
